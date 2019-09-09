@@ -1,0 +1,76 @@
+/* alone.wxss */
+.gather{
+  width: 80%;
+  margin-top: 30rpx;
+  /* display: flex; */
+  flex-direction: cloumn;
+
+}
+.number{
+  width: 900rpx;
+  height: 80rpx;
+  margin-top: 40rpx;
+  display:flex;
+  background: white
+}
+.number label{
+  width: 300rpx;
+  font-size: 50rpx;
+}
+#Local{
+  position:absolute;
+  display: flex;
+  flex-direction: column;
+  bottom: 700rpx;
+  /* position:absolute;
+  top:400rpx; */
+}
+.picker{
+  width: 400rpx;
+  font-size: 50rpx;
+  /* border-bottom: 1rpx solid black; */
+  /* border: 1rpx solid black; */
+  /* border-radius:5%; */
+}
+.txt{
+  width: 260rpx;
+  margin-top: 15rpx;
+  font-size: 50rpx;
+}
+#switch{
+  /* margin-top: 10rpx; */
+  margin-left: 250rpx;
+}
+.btn {
+  width: 310rpx; 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.btnImg {
+  margin-right: 8rpx;
+  width: 46rpx;
+  height: 46rpx;
+}
+.btn::after{
+  border-radius: 98rpx; 
+  border-color:rgb(105, 230, 255);
+}
+.image{
+  width: 20rpx;
+  height: 20rpx;
+  border-top: 2px solid #999;
+  border-right: 2px solid #999; 
+  position: absolute;
+  right: 20rpx;
+  transform: rotate(45deg);
+  margin-top:28rpx;
+
+}
+.ps{
+  position: absolute;
+  margin-top: 350rpx;
+  font-size: 25rpx;
+  color: grey;
+}

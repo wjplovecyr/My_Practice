@@ -1,0 +1,19 @@
+<!--index.wxml-->
+<view class="container">
+  <view>
+  <image src='images/undercover.jpg' id='image'></image>
+  </view>
+  
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+
+  <view class="userinfo">
+    <button class='change' bindtap="alone">单机轮流模式</button>
+    <button class='change' bindtap='no'>好友房间模式</button>
+    <button class='change' bindtap='no'>在线模式</button>  
+  </view>
+
+  
+</view>
+

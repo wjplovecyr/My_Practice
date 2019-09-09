@@ -1,0 +1,28 @@
+<!-- undercover.xml -->
+<view >
+  <!-- <view wx:if="{{dates[rand].state==1}}">平民胜利！</view>
+  <view wx:elif="{{}}">卧底胜利！</view> -->
+  <view >请投票给您认为的卧底！</view>
+
+  <block wx:for="{{index}}" data-item="item" wx:for-index="idx">
+    <view class='under' bindtap='change' data-index="{{idx}}">
+      <text class='txt'>投票给{{idx+1}}号玩家</text>
+      <!-- <view wx:if="{{idx+1 == rand}}" style='display:none;{{key==idx+1?"display:block":""}}'>：卧底死亡！</view>
+      <view wx:else style='display:none;{{key==idx+1?"display:block;":""}}'>：平民死亡！</view> -->
+
+      <view wx:if="{{idx+1 == rand}}" hidden="{{dates[idx].state==0 ?'dates[idx].temp':''}}">
+      <text class='word'>：卧底死亡！</text>
+      <image src='images/die.png' class='btnImg1'></image>
+      </view>
+      <view wx:else hidden="{{dates[idx].state==0 ?'dates[idx].temp':''}}">
+      <text class='word'>：平民死亡！</text>
+      <image src='images/die.png' class='btnImg1'></image></view>
+    </view>
+  </block>
+
+<button class='btn' bindtap='continue'>
+  继续游戏
+<image src='images/fire.png' class='btnImg'></image>  
+</button>
+
+</view>

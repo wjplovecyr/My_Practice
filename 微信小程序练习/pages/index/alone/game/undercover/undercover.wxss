@@ -1,0 +1,38 @@
+.under{
+  width: 100%;
+  height: 80rpx;
+  margin-top: 20rpx;
+  display:flex;
+  background:rgb(236, 223, 223);  
+  border-radius: 50rpx; 
+}
+.btn {
+  margin-top: 50rpx;
+  width: 310rpx; 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.btnImg {
+  margin-right: 8rpx;
+  width: 46rpx;
+  height: 46rpx;
+}
+.btn::after{
+  border-radius: 98rpx; 
+  border-color:rgb(105, 230, 255);
+}
+.btnImg1 {
+  margin-top:10rpx;
+  margin-right: 8rpx;
+  width: 46rpx;
+  height: 46rpx;
+}
+.txt{
+  margin-top: 10rpx;
+  margin-left: 10rpx;
+}
+.word{
+  margin-left: 10rpx;
+}

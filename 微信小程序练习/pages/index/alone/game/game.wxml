@@ -1,0 +1,19 @@
+<view class='container1'>
+  <view class='ps'>请{{player}}号玩家翻开卡片</view>
+  <view class='img'>
+    <image src='images/back.jpg' class="{{bg}}" bindtap='bat'></image>
+    <image src='images/front.jpg' class='{{fg}}' bindtap='bat'></image>
+    <view class='{{fg}}'  bindtap='bat' style='text-align: center;line-height: 500rpx;'>{{word}}</view>
+    <!-- <view class='{{fg}}' bindtap='bat' style="background-image:images/front.jpg">{{word}}</view> -->
+  </view>
+  <view id='Local'>
+    <button class='btn' bindtap='next'>
+      <view>我知道啦！</view>
+      <image src='images/check.png' class='btnImg'></image>
+    </button>
+    <button class='btn1' bindtap='restart'>
+      <view>重新发词！</view>
+      <image src='images/restart.png' class='btnImg'></image>
+    </button>
+  </view>
+</view>

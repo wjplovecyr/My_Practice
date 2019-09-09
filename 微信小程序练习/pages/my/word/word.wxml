@@ -1,0 +1,25 @@
+<view class='container'>
+  <view class='tag'>
+    发挥想象力
+  </view>
+  <view class='addword'>
+    <view class='word'>
+      <label>平民词:</label>
+      <input class='txt'  id='unmber' value='{{coname}}' bindinput='formName' maxlength='20' />
+    </view>
+    <view class='word'>
+      <label>卧底词:</label>
+      <input class='txt'  id='unmber' value='{{unname}}' bindinput='formName1' maxlength='20' />
+    </view>
+  
+    <button class='btn' bindtap='onAdd'>
+      <image src='images/sumbit.png' class='sumbit'></image>
+      <text>提交</text>
+    </button>
+  </view>
+  <view class='ps'>
+      您可以通过您自己的奇思妙想，为大家提供有趣的词语，我们会虚心采纳您的意见！
+      如果词语被我们采纳，将会出现在游戏中！
+  </view>
+
+</view>

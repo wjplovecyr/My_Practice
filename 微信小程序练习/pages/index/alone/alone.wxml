@@ -1,0 +1,32 @@
+<!-- alone.wxml -->
+<view class='container' >
+  <view class='gather'>
+    <view class='number'>
+    <label>游戏人数：</label>
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}" class='picker'>
+      <image src='images/小箭头.png' class='image'></image>
+      <view class="picker">{{array[index]}}</view>
+    </picker>
+     <!-- <input name="gamenumber" type='number' value='5' /> -->
+    </view>
+
+    <!-- <view class='number'>
+    <label>卧底人数：</label>
+      <input class='txt' disabled='{{temp1}}' bindinput="unnumber" type='number' value='{{unvalue}}' id='unmber' maxlength='1' />
+    </view> -->
+
+    <view class='number'>
+    <label>是否允许白板</label>
+      <!-- <input class='txt' disabled='{{temp}}' id="whitenumber" bindinput="wnumber" type='number' focus='{{focus}}' maxlength='1' value='{{wvalue}}'/> -->
+      <switch id='switch' color='rgb(138, 235, 235)' bindchange="switchChange" />
+    </view>
+  </view>
+  <view class='ps'>如果选择允许白板的话，这局中白板将充当卧底！</view>
+  
+  <view id='Local'>
+    <button  class='btn' bindtap="game">
+      <image src='images/start.png' class='btnImg'></image>
+      <view>开始游戏</view>
+    </button>
+  </view>
+</view>

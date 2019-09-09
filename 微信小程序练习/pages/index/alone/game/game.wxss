@@ -1,0 +1,98 @@
+.container1{
+  width: 100%;
+  transform-style:preserve-3d;
+  position:relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  background: rgb(250, 250, 250)
+
+}
+.btn {
+  width: 310rpx; 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.btnImg {
+  margin-right: 8rpx;
+  width: 46rpx;
+  height: 46rpx;
+}
+.btn::after{
+  border-radius: 98rpx; 
+  border-color:rgb(105, 230, 255);
+}
+
+.btn1 {
+  margin-top: 70rpx;
+  width: 310rpx; 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn1::after{
+  border-radius: 98rpx; 
+  border-color:rgb(105, 230, 255);
+}
+
+#Local{
+  position:absolute;
+  display: flex;
+  flex-direction: column;
+  /* bottom: 100rpx; */
+  /* position:absolute; */
+  top:900rpx;
+}
+.ps
+{
+  position:absolute;
+  top: 60rpx;
+}
+.img{
+  margin-top: 200rpx;
+  background: rgb(250, 250, 250);
+}
+.frame{
+  width: 370rpx;
+  height: 600rpx;
+  border-radius: 40rpx; 
+  left: 25%;
+  position: absolute;
+}
+.front{
+  animation:front 1s linear 1;
+  backface-visibility: hidden;
+}
+.back{
+  animation:back 1s linear 1;
+}
+@keyframes front{
+  from{
+    transform: rotateY(0deg);
+  }  
+  to{
+    transform: rotateY(180deg);
+  }
+}
+@keyframes back{
+  from{transform: rotateY(-180deg);
+  }  
+  to{transform: rotateY(0deg);
+  }
+}
+.one{
+  z-index:6
+}
+.two{
+  z-index:5
+}
+.word{
+  font-size: 50rpx;
+  
+}

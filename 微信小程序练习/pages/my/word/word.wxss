@@ -1,0 +1,51 @@
+.tag{
+  font-size: 60rpx;
+  font-family: "华文琥珀";
+  margin-top: 100rpx;
+}
+.word{
+  width: 750rpx;
+  height: 80rpx;
+  margin-top: 40rpx;
+  display:flex;
+  background: rgb(236, 223, 223);
+  border-radius: 30rpx;
+}
+.addword{
+  margin-top: 100rpx;
+}
+
+.sumbit{
+  width: 46rpx;
+  height: 46rpx;
+  margin-right: 8rpx;
+}
+.btn{
+  margin-top: 100rpx; 
+  width: 200rpx; 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.btn::after{
+  border-radius: 98rpx;
+  border-color: rgb(105, 230, 255);
+}
+.word label{
+  margin-top: 10rpx;
+  margin-left: 20rpx;
+}
+.txt{
+  width: 550rpx;
+  height: 60rpx;
+  margin-top: 10rpx;
+  margin-left: 30rpx;
+  font-size: 50rpx;
+}
+.ps{
+  margin:200rpx 0 40rpx 30rpx;
+  width: 650rpx;
+  font-size: 30rpx;
+  color: #999; 
+}

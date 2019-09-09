@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/index/alone/alone",
+    "pages/index/alone/game/game",
+    "pages/index/alone/game/undercover/undercover",
+    "pages/index/addword/addword",
+    "pages/my/my",
+    "pages/my/word/word"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "谁是卧底",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+      "list":[
+        {
+          "pagePath":"pages/index/index",
+          "text":"首页",
+          "iconPath":"images/first2.png",
+          "selectedIconPath": "images/first.png"
+        },
+        {
+          "pagePath":"pages/my/my",
+          "text": "我的",
+          "iconPath": "images/my1.png",
+          "selectedIconPath": "images/my.png"
+        }
+      ]
+      
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "sitemapLocation": "sitemap.json",
+  "cloud": true
+}

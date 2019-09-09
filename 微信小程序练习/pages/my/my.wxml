@@ -1,0 +1,25 @@
+<!--pages/my/my.wxml-->
+<view class="container" >
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+
+
+  <view class="mytable">
+    <view class='table' bindtap='jumping'>
+      <image src='images/add.png' class='addimg'></image>
+      <text class='model'>贡献词汇</text>
+    </view> 
+    <view class='table' bindtap='no'>
+      <image src='images/prize.png' class='addimg' style='width:50rpx;height:50rpx;'></image>
+      <text class='model'>战绩查询</text>
+    </view>
+
+  </view>
+
+
+</view>
